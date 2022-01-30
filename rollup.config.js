@@ -56,4 +56,4 @@ const sw = {
   preserveEntrySignatures: 'strict',
 };
 
-export default [ sw ];
+export default [ main, sw ];
