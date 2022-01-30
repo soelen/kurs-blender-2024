@@ -8,7 +8,7 @@ import { html, LitElement } from 'lit';
 // </div>
 // `;
 // 
-import { connect } from '../bluetooth';
+import { connect, print, } from '../bluetooth';
 
 class WmBluetooth extends LitElement {
     constructor() {
@@ -21,13 +21,14 @@ class WmBluetooth extends LitElement {
             event.preventDefault();
             console.log('hello')
         }}">
-            <textarea>j</textarea>
+            <textarea>m</textarea>
             <div>
                 <button type="button" @click="${ event => {
                     console.log('yesll');
                     connect();
                 }}">Connect</button>
                 <button @click="${ event => {
+                    print('hello');
                     console.log('bb')
                 }}">Send</button>
             </div>
