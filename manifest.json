@@ -3,10 +3,10 @@
   "display": "standalone",
   "start_url": "/",
   "short_name": "Webmontag Bluetooth",
-  "theme_color": "#e1477e",
+  "theme_color": "#10bb79",
   "description": "A small presentation about web bluetooth. 31. Jan 2022",
   "orientation": "any",
-  "background_color": "#ecdfd8",
+  "background_color": "#0c8457",
   "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
