@@ -12,7 +12,7 @@ injectManifest({
     'assets/icons/*.{png,webp,jpg}',
     'assets/screenshots/*.{png,webp,jpg}',
   ],
-  swSrc: 'sw.js',
+  swSrc: 'dist/sw.js',
   swDest: 'dist/sw.js',
 });
 

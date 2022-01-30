@@ -43,17 +43,17 @@ const sw = {
     sourcemap: false
   },
   plugins: [
+    resolve({
+      exportConditions: ['production']
+    }),
     replace({
       "preventAssignment": true,
       "process.env.NODE_ENV": JSON.stringify(
         process.env.NODE_ENV || "production"
       ),
     }),
-    resolve({
-      exportConditions: ['production']
-    }),
   ],
   preserveEntrySignatures: 'strict',
 };
 
-export default [ main, sw ];
+export default [ sw ];
