@@ -51,7 +51,7 @@ const print = ( data ) => {
 
     const mapped = textEncoder( data );
     Promise.all( mapped ).then( data => {
-      var chunk_size = 110;
+      var chunk_size = 16;
       var groups = []
       groups = mapped.map( ( character, index ) => {
         return index % chunk_size === 0 ? mapped.slice( index, index + chunk_size ) : null;
