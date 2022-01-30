@@ -1,7 +1,7 @@
 let characteristic;
 
 const connect = ( filter, service ) => {
-
+  return new Promise(function( resolve, reject) {
     console.log('yes')
     console.log( filter, service );
 
@@ -35,10 +35,14 @@ const connect = ( filter, service ) => {
     .then( ( characteristics ) => {
         console.log('characteristics');
         characteristic = characteristics.find( characteristic => characteristic.properties.write );
+        resolve( characteristic );
         return characteristic;
     }).catch( error => {
+        reject( error );
         console.log( error.message );
     });
+  });
+
 }
 
 const print = ( data ) => {

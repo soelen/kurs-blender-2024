@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "hackers-tiny-slide-deck": "^0.3.1",
-    "lit": "^2.1.2"
+    "lit": "^2.1.2",
+    "workbox-window": "^6.4.2"
   }
 }

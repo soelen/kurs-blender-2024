@@ -11,6 +11,15 @@ import { html, LitElement } from 'lit';
 import { connect, print, } from '../bluetooth';
 
 class WmBluetooth extends LitElement {
+
+    // _isConnected = false;
+    // _text = '';
+
+    static properties = {
+        _isConnected: {state: true, },
+        _text: { state: true, },
+    };
+
     constructor() {
         super();
     }
@@ -21,14 +30,19 @@ class WmBluetooth extends LitElement {
             event.preventDefault();
             console.log('hello')
         }}">
-            <textarea>m</textarea>
+            <textarea @input="${ event => {
+              this._text = event.currentTarget.value;
+            }}"></textarea>
             <div>
                 <button type="button" @click="${ event => {
                     console.log('yesll');
-                    connect();
+                    connect().then( characteristic => {
+                        this._isConnected = true;
+                        console.log( 'mission successful');
+                    } );
                 }}">Connect</button>
-                <button @click="${ event => {
-                    print('hello');
+                <button ?disabled="${ !this._isConnected }" @click="${ event => {
+                    print( this._text );
                     console.log('bb')
                 }}">Send</button>
             </div>
