@@ -39,13 +39,13 @@ class WmBluetooth extends LitElement {
             color: black;
             display: block;
             width: 100%;
-            white-space: nowrap;
         }
         button[disabled] {
             opacity: .5;
         }
         button {
             all:unset;
+            white-space: nowrap;
             cursor: pointer;
             border-radius: 8px;
             text-transform: uppercase;
