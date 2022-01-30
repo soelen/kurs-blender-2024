@@ -21,7 +21,7 @@
     {
       "src": "assets/icons/mask_192.png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
       "src": "assets/icons/icon_48.png",
