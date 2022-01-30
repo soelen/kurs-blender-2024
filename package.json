@@ -1,0 +1,45 @@
+{
+  "name": "webmontag-webbluetooth",
+  "version": "1.0.0",
+  "description": "A small presentation about web bluetooth. 31. Jan 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && rollup --config rollup.config.js && node template.js && node workbox.mjs",
+    "start": "concurrently \"nodemon --watch src --exec 'node template.js && rollup --config rollup.config.js'\" \"npm run server\"",
+    "server": "web-dev-server --app-index dist/index.html --root-dir dist/ --compatibility none --node-resolve --watch --open /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soelen/webmontag-webbluetooth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soelen/webmontag-webbluetooth/issues"
+  },
+  "homepage": "https://github.com/soelen/webmontag-webbluetooth#readme",
+  "devDependencies": {
+    "@open-wc/rollup-plugin-html": "^1.2.5",
+    "@rollup/plugin-multi-entry": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-replace": "^3.0.1",
+    "@rollup/plugin-strip": "^2.1.0",
+    "@web/dev-server": "^0.1.29",
+    "concurrently": "^7.0.0",
+    "marked": "^4.0.12",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.66.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "workbox-build": "^6.4.2",
+    "workbox-cacheable-response": "^6.4.2",
+    "workbox-expiration": "^6.4.2",
+    "workbox-precaching": "^6.4.2",
+    "workbox-strategies": "^6.4.2"
+  },
+  "dependencies": {
+    "hackers-tiny-slide-deck": "^0.3.1"
+  }
+}

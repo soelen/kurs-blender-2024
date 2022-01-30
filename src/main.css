@@ -1,0 +1,6 @@
+:root {
+    --webmontag-primary: #0c8457ff;
+    --webmontag-primary-light: #10bb79ff;
+    --htsd-body-bg-color: var( --webmontag-primary );
+    --htsd-slide-bg-color: var( --webmontag-primary-light );
+}
