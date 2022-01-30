@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/ && rollup --config rollup.config.js && node template.js && node workbox.mjs",
-    "start": "concurrently \"nodemon --watch src --exec 'node template.js && rollup --config rollup.config.js'\" \"npm run server\"",
-    "server": "web-dev-server --app-index dist/index.html --root-dir dist/ --compatibility none --node-resolve --watch --open /"
+    "start": "concurrently \"nodemon -e js,md,css --watch src --exec 'node template.js && rollup --config rollup.config.js'\" \"npm run server\"",
+    "server": "web-dev-server --app-index dist/index.html --root-dir dist/ --compatibility none --node-resolve --watch --open /",
+    "qrcode": "qrcode -o assets/url.svg \"https://webmontag-webbluetooth.netlify.app\""
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/soelen/webmontag-webbluetooth/issues"
   },
-  "homepage": "https://github.com/soelen/webmontag-webbluetooth#readme",
+  "homepage": "https://webmontag-webbluetooth.netlify.app",
   "devDependencies": {
     "@open-wc/rollup-plugin-html": "^1.2.5",
     "@rollup/plugin-multi-entry": "^4.1.0",
@@ -30,6 +31,7 @@
     "concurrently": "^7.0.0",
     "marked": "^4.0.12",
     "nodemon": "^2.0.15",
+    "qrcode": "^1.5.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.66.1",
     "rollup-plugin-copy": "^3.4.0",
@@ -40,6 +42,7 @@
     "workbox-strategies": "^6.4.2"
   },
   "dependencies": {
-    "hackers-tiny-slide-deck": "^0.3.1"
+    "hackers-tiny-slide-deck": "^0.3.1",
+    "lit": "^2.1.2"
   }
 }

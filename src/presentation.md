@@ -1,7 +1,7 @@
 # Title
 
-I'm the first slide.
-<input>
+I'm the very cool first slide.
+<wm-bluetooth></wm-bluetooth>
 
 ---
 
@@ -9,6 +9,10 @@ I'm the first slide.
 ## Topic 1
 
 I'm the second slide.
+
+[ESC/POS quick reference](https://manualzz.com/doc/20630706/esc-pos-quick-reference)
+
+![webmontag-webbluetooth.netlify.app](/assets/url.svg)
 
 ---
 

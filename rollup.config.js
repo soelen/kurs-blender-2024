@@ -20,9 +20,9 @@ const main = {
         process.env.NODE_ENV || "production"
       ),
     }),
-    strip({
-      functions: ["console.log"],
-    }),
+    // strip({
+    //   functions: ["console.log"],
+    // }),
     copy({
       targets: [
         { src: "assets", dest: "dist/" },
