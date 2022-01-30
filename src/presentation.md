@@ -1,6 +1,6 @@
 # Title
 
-I'm the very cool slide.
+I'm the very VERY cool slide.
 <wm-bluetooth></wm-bluetooth>
 
 ---
