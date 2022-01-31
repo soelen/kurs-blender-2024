@@ -15,6 +15,8 @@ writeFileSync( './dist/index.html', `<!DOCTYPE html>
     <meta name="description" content="A small presentation about web bluetooth. 31. Jan 2022" />
     <meta name="theme-color" content="#10bb79" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta property="og:image" content="/assets/screenshots/screen.jpg" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/icon.svg">
     <title>Webmontag - Webbluetooth</title>
     </head>
 <body>
