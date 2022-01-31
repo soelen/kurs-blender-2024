@@ -5,7 +5,7 @@
 - Was ist Web Bluetooth? 
 - Wie sieht das in der Praxis aus?
 - Wie hat es begonnen?
-- Gibt es Praktische Beispiele? Wie sieht die Zukunft aus?
+- Wie sieht die Zukunft aus?
 
 ---
 
@@ -15,7 +15,7 @@
 - Bluetooth ist ein Industriestandard welche von der [SIG](https://de.wikipedia.org/wiki/Bluetooth_Special_Interest_Group) vorangetrieben wurde.
 - Der Name wurde vom dänischen König [Harald Blauzahn](https://de.wikipedia.org/wiki/Harald_Blauzahn#Sonstiges) abgeleitet
 - Das Logo ![Bluetooth](/assets/icons/bluetooth.svg) zeigt ein Monogram von altnordischen Runen
-- Heutzutage bildet Sie eine schnittstelle über die alle Geräte miteinander kabelos kommunizieren
+- Heutzutage bildet Sie eine Schnittstelle über die alle Geräte miteinander kabelos kommunizieren
 
 
 
@@ -36,7 +36,7 @@
 - Nachdem du dich mit dem GATT Server des Gerätes verbunden hast erhälst du eine Liste von Services
 - Ein Gerät kann mehere Services anbieten, die entwider von SIG oder vom Hersteller definiert werden. Services wie z.B. Bluetooth Köpfhörer können neben einem Audioservice den Service anbieten eine Playliste zu bedienen.
 - Services haben Characteristics. Bei einem Characteristic handelt es sich um eine Low-Level Datenschnittstelle die die Daten des Services wiederspiegeln.
-- Eine Characteristic gibt an ob man darauf Schreiben, Lesen oder ( im Sinne eines Event Listener) zuhören kann. Beispiel: Bei einem BT Herz schrittmesser könntest du einen Event Listener binden welche dir aktiv Daten liefert; oder bei einem Kassendrucker könntest du eine Characteristic mit Schreibrechte Druckbefehle übersenden.
+- Eine Characteristic gibt an ob man darauf Schreiben, Lesen oder ( im Sinne eines Event Listener) zuhören kann. Beispiel: Bei einem BT Herz Schrittmesser könntest du einen Event Listener binden welche dir aktiv Daten liefert; oder bei einem Kassendrucker könntest du eine Characteristic mit Schreibrechte Druckbefehle übersenden.
 
 Tipp: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en&gl=US) kann nach Bluetooth Geräte Scannen, verbinden und Information über die Services und Characteristics preisgeben!
 
@@ -83,7 +83,7 @@ Quelle: [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-ener
 - Standard gibt es "erst" seit "2017" 
 - Betriebsystemabhängig, am Anfang wurden z.B. nur Macbooks unterstützt.
 - Auf Linuxrechner scheint es immernoch Probleme zu geben
-- Auf manche Betriebsystem ist das Feature absichtlich ausgeschaltet. Mit [chrome://flags](chrome://flags/#enable-web-bluetooth-new-permissions-backend) kann das erzwungen werden
+- Auf manche Betriebsysteme ist das Feature absichtlich ausgeschaltet. Mit [chrome://flags](chrome://flags/#enable-web-bluetooth-new-permissions-backend) kann das erzwungen werden
 - Hardwareabhängig, persöhnliche Erfahrung: Code hat sich [anders auf Mobilgeräte verhalten](https://bugs.chromium.org/p/chromium/issues/detail?id=1183721)
 
 [caniuse](https://caniuse.com/web-bluetooth)
@@ -109,9 +109,7 @@ Durch diese Belege zeigt sich eins: Die experimentelle Technologie ist immernoch
 - Es gab den versuch von Mozilla ein eigenes Browserbasierendes Betriebsystem namens Firefox OS zu etablieren
 - Um Hardware für Webapp Entwickler zugänglich zu machen wurden extrem viele "Web" Standards geschrieben
 - Es gab einen alten, inoffizellen [Web Bluetooth API Standard](http://man.hubwiz.com/docset/JavaScript.docset/Contents/Resources/Documents/developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/API/Bluetooth_API.html)
-- [Webapp](https://github.com/begeeben/firefox-os-browser-sample), eine Möglichkeit Firefox OS Software mit Webtechnologien zu schreiben, konnte diesen Standard verwenden
-
-
+- [Webapp](https://github.com/begeeben/firefox-os-browser-sample), sind für Firefox OS geschriebene Applikationen, die mit Webtechnologien ermöglicht werden. 
 
 ---
 
