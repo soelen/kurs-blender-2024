@@ -14,7 +14,9 @@ writeFileSync( './dist/index.html', `<!DOCTYPE html>
     <link rel="apple-touch-icon" href="/assets/icons/mask_192.png">
     <meta name="description" content="This is a PWA Starter app" />
     <meta name="theme-color" content="#10bb79" />
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" /> <title>Webmontag</title> </head>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Webmontag - Webbluetooth</title>
+    </head>
 <body>
     <wm-workbox></wm-workbox>
     ${ html }

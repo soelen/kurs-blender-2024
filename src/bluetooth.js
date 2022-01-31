@@ -1,22 +1,24 @@
+import { printAndFeedNLines } from './escpos';
+
 let characteristic;
 let bluetoothDevice;
 
-const connect = ( filter, service ) => {
-  return new Promise( function( resolve, reject) {
+    const PRINT_SERVICE = 0x18f0;
+
+export const connect = () => {
+
+  return new Promise( ( resolve, reject) => {
 
     return navigator.bluetooth.requestDevice( {
         acceptAllDevices: true,
-        optionalServices: [ 0x18F0, ]
+        optionalServices: [ PRINT_SERVICE, ],
     })
-    .then( ( device ) => {
+    .then( device => {
         bluetoothDevice = device;
-
-        const gatt = device.gatt;
-
-        return gatt.connect();
+        return device.gatt.connect();
     } )
     .then( server => {
-        return server.getPrimaryService( 0x18F0 );
+        return server.getPrimaryService( PRINT_SERVICE );
     } )
     .then( ( service ) => {
         return service.getCharacteristics();
@@ -26,59 +28,57 @@ const connect = ( filter, service ) => {
         resolve( characteristic );
         return characteristic;
     }).catch( error => {
-        reject( error );
+        return reject( error );
     });
   });
 
 }
 
-const disconnect = () => {
+export const disconnect = () => {
+
   if (!bluetoothDevice) return false;
-  if (bluetoothDevice.gatt.connected) {
+
+  if ( bluetoothDevice.gatt.connected ) {
+
     bluetoothDevice.gatt.disconnect();
     return true;
   }
   return false;
 }
 
-const print = ( data ) => {
+export const print = ( data ) => {
 
-    let array = [];
+    // Zeichen in ascii codes umwandeln
+    const asciiCodes = [];
 
-    for (var i=0; i < data.length; i++ ) {
-      array.push( data[i].charCodeAt(0) );
+    for (let index = 0; index < data.length; index++ ) {
+      asciiCodes.push( data[ index ].charCodeAt( 0 ) );
     }
 
-    const mapped = textEncoder( data );
-    Promise.all( mapped ).then( data => {
-      var chunk_size = 16;
-      var groups = []
-      groups = mapped.map( ( character, index ) => {
-        return index % chunk_size === 0 ? mapped.slice( index, index + chunk_size ) : null;
-      } ).filter( character => character );
+      const chunk_size = 16;
+      const bufferGroups = asciiCodes.map( ( character, index ) => {
+        return index % chunk_size === 0 ? asciiCodes.slice( index, index + chunk_size ) : null;
+      } )
 
-      groups.push( [ 0x01B, 0x64, 2 ] )
-      chunkStreamer( groups );
-    });
+      // Buffergruppen trimmen
+      .filter( character => character );
 
+      // Bevor wir die umgewandelten Zeichen dem Drucker geben
+      // müssen wir den ESC/POS Befehl zum drucken eingliedern
+      bufferGroups.push( printAndFeedNLines( 2 ) );
+
+      chunkStreamer( bufferGroups );
 }
 
-const textEncoder = ( string ) => {
-  const array = [];
 
-  for ( let i = 0; i < string.length; i++ ) {
-    array.push( string[ i ].charCodeAt( 0 ) );
-  }
-  return array;
-
-}
+// Buffergrupppen werden jetzt in dieser rekursive Funktion
+// nacheinander dem Drucker übergeben
 
 const chunkStreamer = ( groups, index = 0 ) => {
+
   if( !characteristic ) return;
 
   characteristic.writeValue( new Uint8Array( groups[ index ] ).buffer ).then( () => {
       if( groups[ index + 1 ] ) chunkStreamer( groups, index + 1 );
   });
 }
-
-export { connect, print, disconnect }

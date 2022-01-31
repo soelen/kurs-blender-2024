@@ -1,9 +1,9 @@
 :root {
-    --webmontag-primary: #10bb79;
-    --webmontag-primary-dark: #0c8457;
+    --wm-primary: #10bb79;
+    --wm-primary-dark: #0c8457;
 
-    --htsd-body-bg-color: var( --webmontag-primary-dark );
-    --htsd-slide-bg-color: var( --webmontag-primary );
+    --htsd-body-bg-color: var( --wm-primary-dark );
+    --htsd-slide-bg-color: var( --wm-primary );
     --htsd-header-color: white;
     --htsd-highlight-color: white;
     --htsd-text-color: white;
@@ -14,22 +14,13 @@ img {
     max-width: 100%;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
-}
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+video,
+iframe {
+  width: 100% !important;
+  max-width: 800px;
+  min-height: 400px;
+  height: auto !important;
 }
 
 ul {
