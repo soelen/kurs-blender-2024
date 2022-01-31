@@ -9,7 +9,7 @@
     "start": "concurrently \"nodemon -e js,md,css --watch src --exec npm run startagain\" \"npm run server\"",
     "startagain": "node template.js && rollup --config rollup.config.js",
     "server": "web-dev-server --app-index dist/index.html --root-dir dist/ --compatibility none --node-resolve --watch --open /",
-    "qrcode": "qrcode -o assets/url.svg \"https://webmontag-webbluetooth.netlify.app\""
+    "qrcode": "qrcode -o assets/url.png \"https://webmontag-webbluetooth.netlify.app\""
   },
   "repository": {
     "type": "git",
