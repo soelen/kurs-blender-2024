@@ -7,9 +7,6 @@
 - Wie hat es begonnen?
 - Gibt es Praktische Beispiele? Wie sieht die Zukunft aus?
 
-I'm the very VERY cool slide.
-
-
 ---
 
 ## Was ist Webbluetooth?
@@ -43,12 +40,11 @@ I'm the very VERY cool slide.
 
 Tipp: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en&gl=US) kann nach Bluetooth Geräte Scannen, verbinden und Information über die Services und Characteristics preisgeben!
 
-Quelle: [web.dev/bluetooth](https://web.dev/bluetooth/), [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-energy)
+Quelle: [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-energy), [web.dev/bluetooth](https://web.dev/bluetooth/)
 
 ---
-## Notiz an mich
+## Meine Vorgeschichte
 
-- Zeig was du mitgebracht hast
 - Als Kind hatte ich ein Gameboy Printer. Es war eine spaßige Erfahrung!
 - Vor einigen Monaten hab ich beim Eigenbaukombinat eine Digital umgesetzte  Anwesenheitsliste bedient. Es war an einem Kassendrucker angeschlossen. Der Kassendrucker hat ein Code ausgedruckt womit du dich wieder abmelden konntest.
 - Daneben lag eine Ausgiebige Beschreibung wie sie das umgesetzt haben: Mit ESC/POS.

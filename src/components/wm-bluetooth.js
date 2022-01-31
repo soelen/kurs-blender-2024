@@ -81,7 +81,6 @@ class WmBluetooth extends LitElement {
         <div style="border: 1px soldid pink;">
             <form @submit="${ ( event ) => {
                 event.preventDefault();
-                console.log('hello')
             }}">
                 <div id="textarea-wrapper">
                     <textarea @input="${ event => {

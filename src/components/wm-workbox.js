@@ -9,11 +9,6 @@ class WmWorkbox extends LitElement {
 
     static get styles() {
 	    return css`
-	    	#test {
-			position: absolute;
-			top: 0;
-			left: 0;
-		    }
 		    #update {
 			all: unset;
 			background: white;
@@ -34,7 +29,6 @@ class WmWorkbox extends LitElement {
     constructor() {
 
         super();
-	console.log('hello');
 
 	const workbox = new Workbox( '/sw.js' );
 	workbox.addEventListener( 'installed', ( event ) => {
@@ -52,7 +46,7 @@ class WmWorkbox extends LitElement {
     }
 
     render() {
-        return html`<button id="test" @click="${ event => this.hasUpdate = true }">${ this.hasUpdate ? 'Hello' : 'Moto'}</button>
+        return html`
 	<button id="update" type="button" @click="${ event => {
 		window.location.reload();
 	}}">
