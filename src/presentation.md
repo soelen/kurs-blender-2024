@@ -41,13 +41,17 @@ I'm the very VERY cool slide.
 - Services haben Characteristics. Bei einem Characteristic handelt es sich um eine Low-Level Datenschnittstelle die die Daten des Services wiederspiegeln.
 - Eine Characteristic gibt an ob man darauf Schreiben, Lesen oder ( im Sinne eines Event Listener) zuhören kann. Beispiel: Bei einem BT Herz schrittmesser könntest du einen Event Listener binden welche dir aktiv Daten liefert; oder bei einem Kassendrucker könntest du eine Characteristic mit Schreibrechte Druckbefehle übersenden.
 
+Tipp: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en&gl=US) kann nach Bluetooth Geräte Scannen, verbinden und Information über die Services und Characteristics preisgeben!
+
 Quelle: [web.dev/bluetooth](https://web.dev/bluetooth/), [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-energy)
 
 ---
 ## Notiz an mich
 
 - Zeig was du mitgebracht hast
-- Kurze Erklärung wie ich dazu kam über GB Printer & Eigenbaukombinat
+- Als Kind hatte ich ein Gameboy Printer. Es war eine spaßige Erfahrung!
+- Vor einigen Monaten hab ich beim Eigenbaukombinat eine Digital umgesetzte  Anwesenheitsliste bedient. Es war an einem Kassendrucker angeschlossen. Der Kassendrucker hat ein Code ausgedruckt womit du dich wieder abmelden konntest.
+- Daneben lag eine Ausgiebige Beschreibung wie sie das umgesetzt haben: Mit ESC/POS.
 
 ![Eigenbaukombinat Halle](/assets/ebk.jpg)
 ![Eigenbaukombinat Halle](/assets/anwesenheitsliste.jpg)
@@ -123,6 +127,8 @@ Durch diese Belege zeigt sich eins: Die experimentelle Technologie ist immernoch
 - Praxisbeispiel diese Präsentation ist eine PWA! Somit habe ich sobald ich diese Präsentation installiert habe jederzeit die Möglichkeit meinen Kassendrucker zu bedienen! ✨
 
 Kurzum: PWA's in verbindung mit Web API's rockt! Aber nach all den Jahren werden Webapplikationen die auf Hardware zugreifen erst einmal eine romantische Idee bleiben. 😊
+
+chrome://inspect#devices
 
 
 ---
