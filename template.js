@@ -1,7 +1,7 @@
 const marked = require( 'marked' );
 const { readFileSync, writeFileSync } = require( 'fs' );
 
-const markdown = readFileSync( './src/presentation.md' ).toString();
+const markdown = readFileSync( './README.md' ).toString();
 const html = marked.parse( markdown );
 
 writeFileSync( './dist/index.html', `<!DOCTYPE html>
@@ -12,7 +12,7 @@ writeFileSync( './dist/index.html', `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="/assets/icons/mask_192.png">
-    <meta name="description" content="This is a PWA Starter app" />
+    <meta name="description" content="A small presentation about web bluetooth. 31. Jan 2022" />
     <meta name="theme-color" content="#10bb79" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Webmontag - Webbluetooth</title>
