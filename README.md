@@ -2,7 +2,7 @@
 
 ![Webbluetooth](/assets/icons/icon_192.png)
 
-- Was ist Web Bluetooth? 
+- Was ist Webbluetooth? 
 - Wie sieht das in der Praxis aus?
 - Wie hat es begonnen?
 - Wie sieht die Zukunft aus?
