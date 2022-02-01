@@ -21,9 +21,6 @@ writeFileSync( './dist/index.html', `<!DOCTYPE html>
     </head>
 <body>
     ${ html }
-    <script>
-    var process = { env: { NODE_ENV: 'production' }}
-    </script>
     <script src="/htsd.min.js"></script>
     <wm-workbox></wm-workbox>
     <script type="module" src="/main.js"></script>
