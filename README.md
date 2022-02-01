@@ -1,4 +1,4 @@
-# Webmontag: Webbluetooth
+# [Webmontag](https://webwirtschaft.net/webmontag): Webbluetooth
 
 ![Webbluetooth](/assets/icons/icon_192.png)
 
