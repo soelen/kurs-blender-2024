@@ -28,7 +28,7 @@ class WmTutorial extends LitElement {
     firstUpdated() {
 
       const observer = new IntersectionObserver( (entries) => {
-        if(entries[0]['intersectionRatio'] == 0 && this._interval ) {
+        if(entries[0]['intersectionRatio'] == 0 ) {
           this._visible = false;
         }
         else {
@@ -44,10 +44,8 @@ class WmTutorial extends LitElement {
       if( this._content[ this._currentIndex + 1 ] ) {
         this._currentIndex += 1;
       } else {
-        console.log( 'else' );
         this._currentIndex = 0;
       }
-      console.log( "bam", this._currentIndex, this._content  );
     }
 
 
@@ -72,4 +70,5 @@ class WmTutorial extends LitElement {
     }
 
 }
+
 customElements.define( 'wm-tutorial', WmTutorial );
