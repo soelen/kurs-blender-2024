@@ -25,6 +25,7 @@ class WmWorkbox extends LitElement {
 				transform: translateY( -100% );
 				transition: transform 200ms ease;
 				color: black;
+        cursor: pointer;
 		    }
 		    #update[has-update] {
 				transform: translateY( 0 );
@@ -32,11 +33,12 @@ class WmWorkbox extends LitElement {
 	    `;
     }
 
-	// createUIPrompt(opts) {
-	// 	if (confirm('A new update is available. Do you want to update now?')) {
-	// 		opts.onAccept()
-	// 	}
-	// }
+    _onClick( event ) {
+				this._workbox.addEventListener('controlling', (event) => {
+					window.location.reload();
+				});
+				this._workbox.messageSW( { type: 'SKIP_WAITING' } );
+    }
 
     constructor() {
 
@@ -48,14 +50,6 @@ class WmWorkbox extends LitElement {
 
 			this._workbox.addEventListener('waiting', (event) => {
 				this._hasUpdate = true;
-				// this.createUIPrompt({
-				// 	onAccept: async () => {
-				// 		workbox.addEventListener('controlling', (event) => {
-				// 			window.location.reload();
-				// 		});
-				// 		workbox.messageSW( { type: 'SKIP_WAITING' } );
-				// 	}
-				// });
 			});
 
 			this._workbox.addEventListener( 'installed', ( event ) => {
@@ -72,13 +66,12 @@ class WmWorkbox extends LitElement {
 
     render() {
         return html`
-			<button id="update" ?has-update="${ this._hasUpdate }" type="button" @click="${ event => {
-				this._workbox.addEventListener('controlling', (event) => {
-					window.location.reload();
-				});
-				this._workbox.messageSW( { type: 'SKIP_WAITING' } );
-				// window.location.reload();
-			}}">Neuer update verfügbar!</button>
+			<button
+      id="update"
+      ?has-update="${ this._hasUpdate }"
+      type="button"
+      @click="${ this._onClick }"
+      >Ein neues Update ist verfügbar! Klicke <u>hier</u> um die Software zu aktualisieren.</button>
         `;
     }
 
