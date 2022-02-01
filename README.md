@@ -78,7 +78,7 @@ Quelle: [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-ener
 
 ---
 
-## Kann ich diese Standard schon heute verwenden?
+## Kann ich diesen Standard schon heute verwenden?
 
 - Standard gibt es "erst" seit "2017" 
 - Betriebsystemabhängig, am Anfang wurden z.B. nur Macbooks unterstützt.
@@ -113,7 +113,7 @@ Durch diese Belege zeigt sich eins: Die experimentelle Technologie ist immernoch
 
 ---
 
-### Webapp ist tod, es lebe PWA!
+### Webapp ist tot, es lebe PWA!
 
 - PWA's sind Progressive Web Apps welche eine weitere Form Applikationen mit Webtechnologien zu ermöglichen
 - PWA können lokal gespeichert werden
