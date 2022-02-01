@@ -19,8 +19,6 @@
 - Das Logo ![Bluetooth](/assets/icons/bluetooth.svg) zeigt ein Monogram von altnordischen Runen
 - Heutzutage bildet Sie eine Schnittstelle über die alle Geräte miteinander kabelos kommunizieren
 
-
-
 ---
 
 ### Wie funktioniert der Standard?
