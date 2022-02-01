@@ -20,25 +20,19 @@ writeFileSync( './dist/index.html', `<!DOCTYPE html>
     <title>Webmontag - Webbluetooth</title>
     </head>
 <body>
-    <wm-workbox></wm-workbox>
     ${ html }
-</body>
     <script>
     var process = { env: { NODE_ENV: 'production' }}
     </script>
     <script src="/htsd.min.js"></script>
-    <!--
-    -->
+    <wm-workbox></wm-workbox>
     <script type="module" src="/main.js"></script>
     <script>
       navigator.serviceWorker.register("/sw.js");
     </script>
     <link rel="stylesheet" href="main.css">
+</body>
 
 
 </html>
 ` );
-
-/*
-
-    */

@@ -7,6 +7,8 @@
 - Wie hat es begonnen?
 - Wie sieht die Zukunft aus?
 
+<wm-tutorial tipps="Benutze die rechte Pfeiltaste ➡ oder wische nach links um zur nächsten Folie zu gelangen. Mit F11 kannst du zum Vollbild Modus wechseln."></wm-tutorial>
+
 ---
 
 ## Was ist Webbluetooth?
@@ -103,9 +105,7 @@ Um diese Demo ausführen zu können braucht ihr:
 - Nach einem Firmware Update des Controllers: [Event Listener hat nicht mehr funktioniert](https://github.com/mrdoob/daydream-controller.js)
 - Wurde wahrscheinlich wegen dem kommerziellen Fehlschlag von Daydream nicht mehr verfolgt an was es liegen könnte
 
-<div class="responsive-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gMQQvL-3Psg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<wm-youtube>https://www.youtube.com/watch?v=gMQQvL-3Psg</wm-youtube>
 
 Durch diese Belege zeigt sich eins: Die experimentelle Technologie ist immernoch experimentell.
 
