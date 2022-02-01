@@ -35,8 +35,10 @@ class WmWorkbox extends LitElement {
 
     _onClick( event ) {
 				this._workbox.addEventListener('controlling', (event) => {
+          console.log("controlled")
 					window.location.reload();
 				});
+          console.log("skipped")
 				this._workbox.messageSW( { type: 'SKIP_WAITING' } );
     }
 
@@ -46,14 +48,17 @@ class WmWorkbox extends LitElement {
 
 		if ('serviceWorker' in navigator) {
 
+      console.log('has nav')
 			this._workbox = new Workbox( '/sw.js' );
 
 			this._workbox.addEventListener('waiting', (event) => {
+      console.log('waited')
 				this._hasUpdate = true;
 			});
 
 			this._workbox.addEventListener( 'installed', ( event ) => {
 				if (!event.isUpdate) {
+      console.log('installed')
 					console.log( 'First-installed code goes here...' );
 				}
 			} );
