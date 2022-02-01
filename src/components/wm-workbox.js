@@ -1,4 +1,4 @@
-import { html, css, LitElement } from 'lit'; 
+import { html, css, LitElement } from 'lit';
 import { Workbox } from 'workbox-window';
 
 class WmWorkbox extends LitElement {
@@ -6,7 +6,7 @@ class WmWorkbox extends LitElement {
     static properties = {
         _hasUpdate: { type: Boolean, state: true, },
     };
-	
+
 	_workbox;
 
     static get styles() {
@@ -41,13 +41,13 @@ class WmWorkbox extends LitElement {
     constructor() {
 
         super();
-		
+
 		if ('serviceWorker' in navigator) {
 
 			this._workbox = new Workbox( '/sw.js' );
 
 			this._workbox.addEventListener('waiting', (event) => {
-				this.hasUpdate = true;
+				this._hasUpdate = true;
 				// this.createUIPrompt({
 				// 	onAccept: async () => {
 				// 		workbox.addEventListener('controlling', (event) => {
@@ -61,7 +61,7 @@ class WmWorkbox extends LitElement {
 			this._workbox.addEventListener( 'installed', ( event ) => {
 				if (!event.isUpdate) {
 					console.log( 'First-installed code goes here...' );
-				} 
+				}
 			} );
 			this._workbox.register()
 				.catch( ( error ) => {
@@ -69,7 +69,7 @@ class WmWorkbox extends LitElement {
 			});
 		}
 	}
-	
+
     render() {
         return html`
 			<button id="update" ?has-update="${ this._hasUpdate }" type="button" @click="${ event => {
@@ -81,7 +81,7 @@ class WmWorkbox extends LitElement {
 			}}">Neuer update verfügbar!</button>
         `;
     }
-    
+
 
 
 }
