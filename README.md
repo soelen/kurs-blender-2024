@@ -46,8 +46,10 @@ Quelle: [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-ener
 ## Meine Vorgeschichte
 
 - Als Kind hatte ich ein Gameboy Printer. Es war eine spaßige Erfahrung!
+- Jahre später habe ich privat einen Bluetooth Kassendrucker erworben und ein bisschen einer Android App experimentiert
 - Vor einigen Monaten hab ich beim Eigenbaukombinat eine Digital umgesetzte  Anwesenheitsliste bedient. Es war an einem Kassendrucker angeschlossen. Der Kassendrucker hat ein Code ausgedruckt womit du dich wieder abmelden konntest.
 - Daneben lag eine Ausgiebige Beschreibung wie sie das umgesetzt haben: Mit ESC/POS.
+- Ich war neugierig ob ich meinen Kassendrucker via Webbluetooth bedienen konnte...
 
 ![Eigenbaukombinat Halle](/assets/ebk.jpg)
 ![Eigenbaukombinat Halle](/assets/anwesenheitsliste.jpg)
