@@ -71,6 +71,11 @@ Quelle: [Adafruit](https://learn.adafruit.com/introduction-to-bluetooth-low-ener
 ---
 ### Praxisbeispiel: Kassendrucker
 
+Um diese Demo ausführen zu können braucht ihr:
+
+- Ein Betriebsystem und Browser welches den Standard unterstützt
+- Ein [ESC/POS Kompaktibles Gerät](https://www.amazon.de/s?k=esc%2Fpos+bluetooth)
+
 <wm-bluetooth></wm-bluetooth>
 
 [source](https://github.com/soelen/webmontag-webbluetooth/tree/main/src)
