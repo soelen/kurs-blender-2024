@@ -15,7 +15,7 @@ class WmBluetooth extends LitElement {
 
     static get styles() { return css`
     *, ::after, ::before {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
     :host {
         display: block;
@@ -119,7 +119,7 @@ class WmBluetooth extends LitElement {
         </div>
         `;
     }
-    
+
 
 
 }

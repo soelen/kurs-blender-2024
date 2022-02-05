@@ -1,19 +1,44 @@
 :root {
-    --wm-primary: #10bb79;
-    --wm-primary-dark: #0c8457;
+  --wm-primary: #10bb79;
+  --wm-primary-dark: #0c8457;
+  --wm-primary-darker: #047a4e;
 
-    --htsd-body-bg-color: var( --wm-primary-dark );
-    --htsd-slide-bg-color: var( --wm-primary );
-    --htsd-header-color: white;
-    --htsd-highlight-color: white;
-    --htsd-text-color: white;
+  --htsd-body-bg-color: var( --wm-primary-dark );
+  --htsd-slide-bg-color: var( --wm-primary );
+  --htsd-header-color: white;
+  --htsd-highlight-color: white;
+  --htsd-text-color: white;
+}
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+/* :host *::selection, :host::after, :host::before, */
+  *::selection {
+  background: var( --wm-primary-darker );
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul {
-    text-align: left;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba( 0, 0, 0, .2 );
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba( 0, 0, 0, .3 );
 }

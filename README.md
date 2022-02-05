@@ -136,4 +136,4 @@ chrome://inspect#devices
 
 ![webmontag-webbluetooth.netlify.app](/assets/url.png)
 
-https://webmontag-webbluetooth.netlify.app/
+[webmontag-webbluetooth.netlify.app](https://webmontag-webbluetooth.netlify.app/)

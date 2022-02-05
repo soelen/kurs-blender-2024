@@ -11,7 +11,10 @@ class WmTutorial extends LitElement {
 
     static get styles() {
 	    return css`
-        :host { display: block, }
+        :host {
+          display: block;
+          user-select:none;
+        }
 	    `;
     }
 
