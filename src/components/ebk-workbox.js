@@ -1,7 +1,7 @@
 import { html, css, LitElement } from 'lit';
 import { Workbox } from 'workbox-window';
 
-class WmWorkbox extends LitElement {
+class EbkWorkbox extends LitElement {
 
   static properties = {
     _hasUpdate: { type: Boolean, state: true, },
@@ -110,4 +110,4 @@ static get styles() {
 
 
 }
-customElements.define( 'wm-workbox', WmWorkbox );
+customElements.define( 'ebk-workbox', EbkWorkbox );

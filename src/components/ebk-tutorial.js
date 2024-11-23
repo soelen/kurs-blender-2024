@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit';
 
-class WmTutorial extends LitElement {
+class EbkTutorial extends LitElement {
 
     static properties = {
       tipps: { type: String, reflect: true, },
@@ -74,4 +74,4 @@ class WmTutorial extends LitElement {
 
 }
 
-customElements.define( 'wm-tutorial', WmTutorial );
+customElements.define( 'ebk-tutorial', EbkTutorial );

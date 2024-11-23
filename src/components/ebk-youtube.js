@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit';
 
-class WmYoutube extends LitElement {
+class EbkYoutube extends LitElement {
 
     static properties = {
       _hash: { type: String, state: true, },
@@ -74,4 +74,4 @@ class WmYoutube extends LitElement {
 
 
 }
-customElements.define( 'wm-youtube', WmYoutube );
+customElements.define( 'ebk-youtube', EbkYoutube );

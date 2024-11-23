@@ -1,4 +1,3 @@
-import './components/wm-bluetooth';
-import './components/wm-workbox';
-import './components/wm-youtube';
-import './components/wm-tutorial';
+import './components/ebk-workbox';
+import './components/ebk-youtube';
+import './components/ebk-tutorial';

@@ -1,21 +1,33 @@
 :root {
-  --wm-primary: #10bb79;
-  --wm-primary-dark: #0c8457;
-  --wm-primary-darker: #047a4e;
+  --ebk-primary: white;
+  --ebk-primary-dark: #232323;
+  --ebk-primary-darker: #0e1d46;
 
-  --htsd-body-bg-color: var( --wm-primary-dark );
-  --htsd-slide-bg-color: var( --wm-primary );
-  --htsd-header-color: white;
-  --htsd-highlight-color: white;
-  --htsd-text-color: white;
+  --htsd-body-bg-color: var( --ebk-primary-dark );
+  --htsd-slide-bg-color: var( --ebk-primary );
+  --htsd-header-color: black;
+  --htsd-highlight-color: black;
+  --htsd-text-color: black;
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif !important;
+}
+kbd {
+  border: 1px solid #aaa;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color-neutral-subtle, #f8f9fa);
+  background-image: linear-gradient(to bottom, var(--background-color-neutral, #eaecf0), var(--background-color-neutral-subtle, #f8f9fa), var(--background-color-neutral, #eaecf0));
+  color: var(--color-base, #202122);
+  padding: 0.1em 0.3em;
+  font-family: inherit;
+  font-size: 0.85em;
 }
 /* :host *::selection, :host::after, :host::before, */
   *::selection {
-  background: var( --wm-primary-darker );
+  background: var( --ebk-primary-darker );
 }
 
 img {

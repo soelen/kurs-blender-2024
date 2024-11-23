@@ -1,7 +1,7 @@
 {
-  "name": "webmontag-webbluetooth",
+  "name": "kurs-blender-2024",
   "version": "1.0.0",
-  "description": "A small presentation about web bluetooth. 31. Jan 2022",
+  "description": "A small presentation about Kurs Blender 2024",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,16 @@
     "start": "concurrently \"nodemon -e js,md,css --watch src --watch README.md --exec npm run startagain\" \"npm run server\"",
     "startagain": "node template.js && rollup --config rollup.config.js",
     "server": "web-dev-server --app-index dist/index.html --root-dir dist/ --compatibility none --node-resolve --watch --open /",
-    "qrcode": "qrcode -o assets/url.png \"https://webmontag-webbluetooth.netlify.app\""
+    "qrcode": "qrcode -o assets/url.png \"https://kurs-blender-2024.netlify.app\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soelen/webmontag-webbluetooth.git"
+    "url": "git+https://github.com/soelen/kurs-blender-2024.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soelen/webmontag-webbluetooth/issues"
-  },
-  "homepage": "https://webmontag-webbluetooth.netlify.app",
+  "homepage": "https://kurs-blender-2024.netlify.app",
   "devDependencies": {
     "@open-wc/rollup-plugin-html": "^1.2.5",
     "@rollup/plugin-multi-entry": "^4.1.0",

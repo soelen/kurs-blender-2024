@@ -1,23 +1,13 @@
-# [Webmontag](https://webwirtschaft.net/webmontag): Webbluetooth
+# [Eigenbaukombinat](https://eigenbaukombinat.de/): Kurs Blender 2024
 
-![Webbluetooth](/assets/icons/icon_192.png)
+![Webbluetooth](https://eigenbaukombinat.de/wp-content/uploads/2024/10/kurs-blender-2024.jpg)
 
-- Was ist Webbluetooth? 
-- Wie sieht das in der Praxis aus?
-- Wie hat es begonnen?
-- Wie sieht die Zukunft aus?
-
-<wm-tutorial tipps="Benutze die rechte Pfeiltaste ➡ oder wische nach links um zur nächsten Folie zu gelangen. Mit F11 kannst du zum Vollbild Modus wechseln."></wm-tutorial>
+<ebk-tutorial tipps="Benutze die rechte Pfeiltaste ➡ oder wische nach links um zur nächsten Folie zu gelangen. Mit F11 kannst du zum Vollbild Modus wechseln."></ebk-tutorial>
 
 ---
 
-## Was ist Webbluetooth?
-
-- Es ist eine [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
-- Bluetooth ist ein Industriestandard welche von der [SIG](https://de.wikipedia.org/wiki/Bluetooth_Special_Interest_Group) vorangetrieben wurde.
-- Der Name wurde vom dänischen König [Harald Blauzahn](https://de.wikipedia.org/wiki/Harald_Blauzahn#Sonstiges) abgeleitet
-- Das Logo ![Bluetooth](/assets/icons/bluetooth.svg) zeigt ein Monogram von altnordischen Runen
-- Heutzutage bildet Sie eine Schnittstelle über die alle Geräte miteinander kabelos kommunizieren
+## Welcome to 3D Software
+<ebk-youtube>https://www.youtube.com/watch?v=GWY7fsXwh24</ebk-youtube>
 
 ---
 
@@ -78,8 +68,6 @@ Um diese Demo ausführen zu können braucht ihr:
 - Ein Betriebsystem und Browser welches den Standard unterstützt
 - Ein [ESC/POS Kompaktibles Gerät](https://www.amazon.de/s?k=esc%2Fpos+bluetooth)
 
-<wm-bluetooth></wm-bluetooth>
-
 [source](https://github.com/soelen/webmontag-webbluetooth/tree/main/src)
 
 
@@ -103,7 +91,6 @@ Um diese Demo ausführen zu können braucht ihr:
 - Nach einem Firmware Update des Controllers: [Event Listener hat nicht mehr funktioniert](https://github.com/mrdoob/daydream-controller.js)
 - Wurde wahrscheinlich wegen dem kommerziellen Fehlschlag von Daydream nicht mehr verfolgt an was es liegen könnte
 
-<wm-youtube>https://www.youtube.com/watch?v=gMQQvL-3Psg</wm-youtube>
 
 Durch diese Belege zeigt sich eins: Die experimentelle Technologie ist immernoch experimentell.
 
